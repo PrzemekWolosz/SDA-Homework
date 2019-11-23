@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Zadanie8 {
     public static void main(String[] args) {
         textStatistics(getText());
-        
+
     }
 
     public static String getText() {

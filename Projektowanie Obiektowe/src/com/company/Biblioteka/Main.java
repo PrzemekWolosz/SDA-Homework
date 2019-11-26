@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Podaj tytul ksiazki");
         String tytul = scanner.nextLine();
 
-        wyswietlWyniki(Biblioteka.szukajPoTytule(tytul));
+//        wyswietlWyniki(Biblioteka.szukajPoTytule(tytul));
 
     }
 }

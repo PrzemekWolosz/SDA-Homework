@@ -15,8 +15,8 @@ public class Biblioteka {
     Ksiazka ksiazka5 = new Ksiazka("Pokoj na ziemi", autor3);
     Ksiazka ksiazka6 = new Ksiazka("Noc księżycowa", autor3);
 
-    Egzemplarz[] wszystkieTytuly = {ksiazka1, ksiazka2, ksiazka3, ksiazka4, ksiazka5, ksiazka6};
-    Egzemplarz[] tytulyWyszukane;
+    private Egzemplarz[] wszystkieTytuly = {ksiazka1, ksiazka2, ksiazka3, ksiazka4, ksiazka5, ksiazka6};
+    private Egzemplarz[] tytulyWyszukane;
 
     public Egzemplarz[] szukajPoTytule(String tytul) {
         for (int i = 0; i < wszystkieTytuly.length; i++) {
@@ -26,7 +26,6 @@ public class Biblioteka {
         }
         return tytulyWyszukane;
     }
-
 
     public Egzemplarz[] szukajPoAutorze(String imie, String nazwisko) {
         for (int i = 0; i < wszystkieTytuly.length; i++) {

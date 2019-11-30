@@ -10,4 +10,9 @@ public class Peasant extends Citizen {
     public Peasant(String imie) {
         super(imie);
     }
+
+    @Override
+    public String toString() {
+        return "Peasant{}";
+    }
 }

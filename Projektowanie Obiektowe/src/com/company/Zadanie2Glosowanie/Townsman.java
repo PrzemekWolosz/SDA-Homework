@@ -10,4 +10,9 @@ public class Townsman extends Citizen {
     public Townsman(String imie) {
         super(imie);
     }
+
+    @Override
+    public String toString() {
+        return "Townsman{}";
+    }
 }

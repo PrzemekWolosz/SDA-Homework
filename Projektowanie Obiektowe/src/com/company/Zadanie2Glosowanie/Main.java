@@ -1,5 +1,7 @@
 package com.company.Zadanie2Glosowanie;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -16,6 +18,7 @@ public class Main {
 
         System.out.println(Town.howManyCanVote(tablicaMieszkancow));
 
-        Town.whoCanVote(tablicaMieszkancow);
+        System.out.println(Arrays.toString(Town.whoCanVote2(tablicaMieszkancow)));
+
     }
 }

@@ -23,10 +23,12 @@ public class Town {
     }
 
     public static Citizen[] whoCanVote2(Citizen[] tablica) {
-        Citizen[] listaGlosujacych = {};
+        Citizen[] listaGlosujacych = new Citizen[4];
+        int a = 0;
         for (int i = 0; i < tablica.length; i++) {
             if (tablica[i].canVote()) {
-                listaGlosujacych[i] = tablica[i];
+                listaGlosujacych[a] = tablica[i];
+                a++;
             }
         }
         return listaGlosujacych;

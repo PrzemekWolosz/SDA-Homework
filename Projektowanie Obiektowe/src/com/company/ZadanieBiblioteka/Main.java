@@ -1,7 +1,5 @@
 package com.company.ZadanieBiblioteka;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -21,6 +19,19 @@ public class Main {
 
         Biblioteka biblioteka = new Biblioteka(tablicaEgzemplarzy);
 
-        System.out.println(Arrays.toString(biblioteka.szukajPoTytule("AAA")));
+        wyswietl(biblioteka.szukajPoTytule("AAA"));
+        System.out.println();
+        Egzemplarz[] wyszukane = biblioteka.szukajPoAutorze("Imie1", "Nazwisko1");
+        wyswietl(wyszukane);
+    }
+
+
+
+    public static void wyswietl(Egzemplarz[] tablicaDoWyswietlenia) {
+        for (int i = 0; i <tablicaDoWyswietlenia.length; i++) {
+            if(tablicaDoWyswietlenia[i] != null) {
+                System.out.println(tablicaDoWyswietlenia[i]);
+            }
+        }
     }
 }

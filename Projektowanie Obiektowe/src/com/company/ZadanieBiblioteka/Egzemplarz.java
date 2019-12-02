@@ -3,7 +3,7 @@ package com.company.ZadanieBiblioteka;
 public abstract class Egzemplarz {
 
     private String tytul;
-    Autor autor;
+    protected Autor autor;
 
     public Egzemplarz(String tytul, Autor autor) {
         this.tytul = tytul;

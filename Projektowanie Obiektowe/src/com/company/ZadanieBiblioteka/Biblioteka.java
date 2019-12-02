@@ -12,7 +12,7 @@ public class Biblioteka {
     }
 
     public Egzemplarz[] szukajPoTytule(String tytul) {
-
+        Egzemplarz[] znalezioneEgzemplarze = new Egzemplarz[10];
         for (int i = 0; i < tablicaEgzemplarzy.length; i++) {
             if (tablicaEgzemplarzy[i].getTytul().equals(tytul)) {
                 znalezioneEgzemplarze[i] = tablicaEgzemplarzy[i];
@@ -22,7 +22,7 @@ public class Biblioteka {
     }
 
     public Egzemplarz[] szukajPoAutorze(String imie, String nazwisko) {
-
+        Egzemplarz[] znalezioneEgzemplarze = new Egzemplarz[10];
         for (int i = 0; i < tablicaEgzemplarzy.length; i++) {
             if (tablicaEgzemplarzy[i].autor.getImie().equals(imie) && tablicaEgzemplarzy[i].autor.getNazwisko().equals(nazwisko)) {
                 znalezioneEgzemplarze[i] = tablicaEgzemplarzy[i];

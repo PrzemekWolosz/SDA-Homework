@@ -10,6 +10,14 @@ public class Autor {
         this.nazwisko = nazwisko;
     }
 
+    @Override
+    public String toString() {
+        return "Autor{" +
+                "imie='" + getImie() + '\'' +
+                ", nazwisko='" + getNazwisko() + '\'' +
+                '}';
+    }
+
     public String getImie() {
         return imie;
     }

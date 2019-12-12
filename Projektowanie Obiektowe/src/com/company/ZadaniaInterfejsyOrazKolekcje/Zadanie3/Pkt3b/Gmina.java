@@ -1,7 +1,0 @@
-package com.company.ZadaniaInterfejsyOrazKolekcje.Zadanie3.Pkt3b;
-
-public class Gmina extends Powiat {
-
-    Soltys soltys = new Soltys();
-
-}
